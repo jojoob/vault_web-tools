@@ -29,6 +29,8 @@
 					$wrapping_token = '';
 					if (preg_match('/s\\.\\w{24}/', $_POST["wrapping_token"]) == 1) {
 						$wrapping_token = $_POST["wrapping_token"];
+					} elseif (preg_match('/s\\.\\w{24}/', $_GET["token"]) == 1) {
+						$wrapping_token = $_GET["token"];
 					}
 				?>
 				<h1>Use Wrapping Token</h1>

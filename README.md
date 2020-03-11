@@ -8,7 +8,7 @@ This includes:
 * Use wrapping tokens
 * View and rotate (and export) CRL of a PKI secret engine
 
-## Usage
+## Setup
 One way to use this tool collection is to deploy it via a 'php:apache' docker container.
 Just mount this directory to `/var/www/html` inside the container. The tools are configured with environment variables:
 
@@ -18,6 +18,16 @@ Just mount this directory to `/var/www/html` inside the container. The tools are
 	path of the PKI secret engine within vault
 * CRL_EXPORT_PATH  
 	absolute file path where to write the exported CRL
+
+## Usage
+### Manage Unseal Operation (unseal-manage.php)
+-
+
+### Wrapping (wrapping.php)
+Lookup and unwrap a wrapping token. Wrapping token can be inputted via GET parameter 'token' (eg. `?token=s.ZN63Af4ARb4JSg0CQLghfEav`).
+
+### Manage CRL (crl-manage.php)
+-
 
 ### Example docker-compose.yml
 
