@@ -26,6 +26,7 @@
 					} else {
 						echo '<div class="alert alert-danger" role="alert">VAULT_ADDR not set!</div>';
 					}
+					$wrapping_token = '';
 					if (preg_match('/s\\.\\w{24}/', $_POST["wrapping_token"]) == 1) {
 						$wrapping_token = $_POST["wrapping_token"];
 					}
