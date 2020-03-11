@@ -35,7 +35,7 @@
 				?>
 				<h1>Use Wrapping Token</h1>
 				<form method="post" class="form-inline">
-					<input id="wrapping_token" type="text" name="wrapping_token" required autocomplete="off" value="<?php echo $wrapping_token; ?>" class="form-control mb-2 mr-sm-2" placeholder="Wrapping token" >
+					<input id="wrapping_token" type="text" name="wrapping_token" size="24" required autocomplete="off" value="<?php echo $wrapping_token; ?>" class="form-control mb-2 mr-sm-2" placeholder="Wrapping token" >
 					<button type="submit" name="lookup" class="btn btn-primary mb-2 mr-sm-2">Lookup</button>
 					<button type="submit" name="unwrap" class="btn btn-warning mb-2 mr-sm-2">Unwrap</button>
 				</form>
